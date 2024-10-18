@@ -1,83 +1,75 @@
+
 /* Base Element Styles */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 1024px;
-    color: gray;
-    background-color: #ffffff;
-  }
-
-  nav {
-    font-family: "Roboto", Arial, Verdana;
-    font-weight: 400;
-    letter-spacing: 1em;
-    background-color: #f5f5f5;
-    padding: 25px;
-    margin: 0 auto;
-  }
-
-  nav img{
-    max-width: 80%;
-    display: flex;
-    margin: 3em auto 2em; 
-  }
-
-  img{
-    max-width: 100%;
-    margin: 3em auto 2em;
-  }
-
-  h1, .top-nav{
-    font-weight: 200;
-    color:black;
-    text-align: center;
-  }
-
-ul {
-  list-style: none;
-  padding-left: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  font-weight: 200;
-
-  text-align: center;
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 1024px;
+  color:whitesmoke;
+  background-color: white;
 }
-
-p {
-  font-weight:100;
-  text-align: center;
-  color: gray;
-}
-
-a{
+a {
   text-decoration: none;
   color: black;
 }
+nav {
+  font-family: "Roboto", Arial, Verdana;
+  font-weight: 900;
+  background-color:whitesmoke;
+  padding: 1em;
+  margin: 0 auto;
 
-
-h1, .top-nav {
-  text-align: center;
 }
 
-.top-nav, .top-nav li {
+nav img {
+ max-width: 70%;
+ display: flex;
+ margin: 3em auto 2em; 
+}
+
+img {
+  max-width: 100%;
+  margin: 1em auto 1em;
+}
+
+p {
+  font-weight: 200;
+  color: gray;
+  text-align: center;
+  font-size: larger;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+.top-nav {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.top-nav,
+.top-nav li {
   width: 100%;
 }
 
-h1 a, .top-nav a {
-  color: #000;
+h1 a,
+.top-nav a {
+  color: black;
   font-weight: bolder;
 }
 
@@ -86,13 +78,9 @@ h1 a, .top-nav a {
 }
 
 .top-nav li {
-  padding: 10px 0;
+  padding: 15px 0;
   margin: 5px auto;
-  background-color: #fff;
-}
-
-.top-nav a {
-  text-transform: uppercase;
+  background-color: white;
 }
 
 .container {
@@ -101,120 +89,212 @@ h1 a, .top-nav a {
   font-family: 'Roboto', sans-serif;
 }
 
-.col h3
+header {
+  margin: 3.5em auto 2.5em;
+  text-align: center;
+  color: #272727;
+}
+
+.col {
+  margin: 10px;
+  min-height: 250px;
+  color: gray;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  background-color:white;
+}
+
+.col h3,
 p {
   margin: 1em auto 1em;
 }
 
-.col {
-    margin: 10px;
-    min-height: 250px;
-    color: rgb(117, 113, 113);
-    text-align: center;
-    letter-spacing: 1px;
-    padding-top: 5px;
-    background-color: #fff;
+.box-6 {
+  padding-bottom: 3rem;
 }
 
-.box-6{
-  padding-bottom: 4rem;
+.box-7 {
+  max-width: 100%;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin: 0em auto 0em;
+  background-color:whitesmoke;
+  color: black;
 }
 
-.contact-box{
-  background-color: #f5f5f5;
+.box-7 p {
+  max-width: 90%;
 }
+
+hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid whitesmoke;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   height: 80px;
-  background-color: #f5f5f5;
-  color: #272727;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .footer-nav {
   font-size: small;
 }
 
+.top {
+  margin-right: 1em;
+}
+
 .full {
   display: none;
 }
-/* Media Queries */
+
+/* MEDIA QUERIES */
+
 
 @media (min-width: 768px) {
   .top-nav {
-    margin-top: 0;
+      margin-top: 0;
   }
 
   .top-nav li {
-    display: inline-block;
-    width: auto;
-    margin-right: 15px;
-    background-color: #f5f5f5;
+      display: inline-block;
+      width: auto;
+      margin-right: 15px;
+      background-color: whitesmoke;
   }
 
   .top-nav li:last-child {
-    margin-right: 0;
-  }
-  
-  .profile-info:{
-    display: flex;
-    flex-direction: row-reverse;
+      margin-right: 0;
   }
 
-  .profile-info p{
-    margin-right: 3em;
+  .profile {
+      display: flex;
+      flex-direction: row-reverse;
+  }
+
+  .profile p {
+      margin-right: 3em;
+  }
+
+  nav img {
+      max-width: 40%;
+      margin-top: 0.5em;
   }
 
   nav p {
-    text-align: left;
-    margin-top: 0;
-}
+      text-align: left;
+      margin-top: 0;
+  }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.col {
-    flex-basis: calc(50% - 20px);
-}
+  .container {
+      display: flex;
+      flex-wrap: wrap;
 
-.top {
-    display: none;
-}
+  }
 
-footer, 
-.footer-nav,
-.full {
-    display: flex;
-    background-color: #f5f5f5;
-}
+  .col {
+      flex-basis: calc(50% - 20px);
+  }
 
-footer h3 a {
-    margin-left: 2em;
-}
+  .top {
+      display: none;
+  }
 
-.footer-nav {
-    width: 40%;
-    justify-content: space-evenly;
-    margin-right: 0.3em;
-}
+  footer,
+  .footer-nav,
+
+  .full {
+      display: flex;
+      background-color: whitesmoke;
+  }
+
+  footer h4 a {
+      margin-left: 2em;
+  }
+
+  .footer-nav {
+      width: 40%;
+      justify-content: space-evenly;
+      margin-right: 0.3em;
+  }
+
+  .full a {
+      font-weight: 700;
+  }
 
 }
 
 
 @media (min-width: 1024px) {
+  body {
+      background-color: whitesmoke;
+
+  }
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+      display: block;
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
   }
 
-  .top-nav, 
-  .top-nav li {
-    width: initial;
-    margin-bottom: 0;
+  .main-header,
+  .top-nav,
+  .profile {
+      display: flex;
   }
+
+  .main-header {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 1em auto;
+      background-color: whitesmoke;
+  }
+
+  .name {
+      width: 100%;
+      text-align: left;
+      margin-left: 10px;
+      padding-top: 10px;
+  }
+
+  .top-nav {
+      width: 40%;
+      margin-right: 10px;
+      text-align: right;
+  }
+
+  .profile {
+      flex-direction: row-reverse;
+  }
+
+  header {
+      display: block;
+      background-color: white;
+      margin: 3em 0em 0em;
+      padding: 4em 0em 2em; 
+  }
+
+  .container {
+      background-color: white;
+  }
+
+  .col {
+      flex-basis: calc(33.333% - 20px);
+  }
+
+  footer,
+  .footer-nav,
+  .footer-nav li {
+      background-color: whitesmoke;
+  }
+
 }

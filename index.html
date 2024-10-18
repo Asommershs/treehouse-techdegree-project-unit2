@@ -6,69 +6,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Responsive Layout</title>
 </head>
+
 <body>
     <nav>
-        <h1><a href="#">Amanda Sommers</a></h1>
+      <header class="main-header">
+        <h1 class="name">Amanda Sommers</h1>
         <ul class="top-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
-      </nav>
-     <div class="profile-info">
-      <img class="profile-pic" src="images/responsive-layout-profile.png" atl="profile pic of Amanda">
-    <p>As a Pre-Sales Solutions Architect at HubSpot, I bridge the gap between technical solutions and business needs. Collaborating with the sales team, I craft tailored solutions to address prospective clients' challenges using HubSpot's CRM and marketing platforms. My role includes conducting software demos, answering technical inquiries, and working with product teams to relay customer feedback. I enjoy helping businesses leverage HubSpot's tools to drive growth and optimize marketing, sales, and service processes.
-    </p>
+      </header>
+    <div class="profile">
+        <img src="images/responsive-layout-profile.png" alt="Profile Picture" class="image">
+        <p>As a Pre-Sales Solutions Architect at HubSpot, I bridge the gap between technical solutions and business needs. Collaborating with the sales team, I craft tailored solutions to address prospective clients' challenges using HubSpot's CRM and marketing platforms. I enjoy helping businesses leverage HubSpot's tools to drive growth and optimize marketing, sales, and service processes.</p>
     </div>
-    <div class="container">
-      <div class="col box-1">
-        <img class="col-image" src="images/portfolio-1.png" alt="portfolio-1 pic">
-        <h2>Marketing Page</h2>
-        <p>This project shows the fornt page of a marketing website meant for a specific business I'm interested in.</p>
-      </div>
-      <div class="col box-2">
-        <img class="col-image" src="images/portfolio-2.png" alt="website page with search bar and logo">
-        <h2>Search Page</h2>
-        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-      </div>
-      <div class="col box-3">
-        <img class="col-image" src="images/portfolio-3.png" alt="travel app search page">
-        <h2>Travel App</h2>
-        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-      </div>
-      <div class="col box-4">
-        <img class="col-image" src="images/portfolio-4.png" alt="map with red location marker">
-        <h2>Map of Favorite Spots</h2>
-        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-      </div>
-      <div class="col box-5">
-        <img class="col-image" src="images/portfolio-5.png" alt="screen of generic photos in a gird form">
-        <h2>Photo Gallery</h2>
-        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-      </div>
-      <div class="col box-6">
-        <img class="col-image" src="images/portfolio-6.png" alt="calculator picture on website">
-        <h2>Calculator</h2>
-        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-      </div>
+  </nav>
+    <header>
+        <h3 id="portfolio">PORTFOLIO</h3>
+    </header>
+        <div class="container">
+
+          <div class="col box-1">  
+            <img src="images/portfolio-1.png" alt="Marketing Page Photo" class="photo">
+            <h3>Marketing Page</h3>
+            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+          </div>
+          <div class="col box-2">
+            <img src="images/portfolio-2.png" alt="Search Page Photo" class="photo">
+            <h3>Search Page</h3>
+            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+          </div>
+          <div class="col box-3">
+            <img src="images/portfolio-3.png" alt="Travel App Photo" class="photo">
+            <h3>Travel App</h3>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+          </div>
+          <div class="col box-4">
+            <img src="images/portfolio-4.png" alt="Map of Favorite Spots Photo" class="photo">
+            <h3>Map of Favorite Sports</h3>
+            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+          </div>
+          <div class="col box-5">
+            <img src="images/portfolio-5.png" alt="Photo Gallery" class="photo">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          </div>
+          <div class="col box-6">
+            <img src="images/portfolio-6.png" alt="Calculator" class="photo">
+            <h3>Calculator</h3>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+          </div>
     </div>
-    <div class="contact-box">
-      <h2>CONTACT</h2>
-      <p>If you're interested in chatting or want more information about what I've been working on, l'd love to hear from</p>
-      <p>Phone <strong>+1 (111) 555-1234</strong></p>
-      <p>Email <strong>email@yoursite.com</strong></p>
-    </div>
+
+  <div class="col box-7">
+    <h3 id="contact">CONTACT</h3>
+    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+    <p>Phone <strong>+1 (111)555-1234</strong></p>
+    <p>Email <strong>email@yoursite.com</strong></p>
+  </div>
+<hr>
 <footer>
-  <h3>Amanda Sommers</h3>
-  <ul class="footer-nav">
-    <li class="top"><a href="#top" id="bottom">BACK TO TOP</a></li>
-    <li class="full"><a href="#">HOME</a></li>
-    <li class="full"><a href="#portfolio">PORTFOLIO</a></li>
-    <li class="full"><a href="#contact">CONTACT</a></li>
-  </ul>
+        <h4>Amanda Sommers</h4>
+        <ul class="footer-nav">
+            <li class="top"><a href="#top" id="bottom">BACK TO TOP</a></li>
+            <li class="full"><a href="#">HOME</a></li>
+            <li class="full"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="full"><a href="#contact">CONTACT</a></li>
+        </ul>
 </footer>
 </body>
 </html>
