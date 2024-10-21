@@ -198,11 +198,11 @@ footer {
       display: none;
   }
 
-  hr {
-    top: 10x;
-    border-top: 2 px solid darkgrey;
+  hr  {
+    top: 10px;
+    border-top: 2px solid darkgrey;
     margin: 0 auto;
-    width: 95%
+    width: 100%
   }
 
   footer, .footer-nav, .full {
